@@ -1,0 +1,53 @@
+# WORDPRESS GITIGNORE #
+# Ignore OS files #
+# =============== #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+*[Tt]humbs.db
+*.Trashes
+# Ignore logs and databases #
+# ========================= #
+*.log
+*.sql
+*.sqlite
+error_log
+access_log
+# Ignore packages #
+# =============== #
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+# Ignore everything in "wp-content" except the "plugins", "themes", and "uploads" directories. #
+# ============================================================================================ #
+/*
+!.gitignore
+!plugins/
+!themes/
+!uploads/
+!README.md
+# Ignore everything in "plugins" except certain plugins. #
+# ========================================================== #
+plugins/*
+
+# Ignore everything in "themes" except the active theme. #
+# ========================================================== #
+themes/*
+!themes/quotes/
+# Ignore WP Migrate DB Dir #
+# =============== #
+uploads/wp-migrate-db/
+# Ignore packages #
+# =============== #
+themes/quotes/node_modules/
+
+
+

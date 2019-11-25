@@ -1,0 +1,25 @@
+/*
+Theme Name: Quotes On a Dev
+Author: Bruce P
+Description: Random dev quote generator
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: inhabitant
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+//reset 
+@import "reset.scss";
+
+//Resets, variables, mixins
+@import "base.scss";
+
+//layout
+@import "layout.scss";
+
+//buttons, navs, cards etc
+@import "components.scss"
