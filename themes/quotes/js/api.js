@@ -3,7 +3,7 @@
     $('#quote-button').on('click', function(event){
         event.preventDefault();
         console.log("clicked")
-
+        $('#quotes-content')
         $.ajax({
             method: "GET",
             url: wpApiSettings.root + 'wp/v2/posts'
@@ -13,6 +13,7 @@
             let ranNum = randomGen(data)
             const title = data[ranNum].title.rendered
             const content = data[ranNum].content.rendered
+            
             $('#quotes-content').html(`<h2>${title}</h2> ${content}`)
         })
     })
