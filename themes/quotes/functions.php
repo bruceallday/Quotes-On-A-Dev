@@ -15,11 +15,15 @@ function quotes_files() {
     // ));
 }
 
+
 add_action('wp_enqueue_scripts', 'quotes_files');
 
 //Adds theme support - ex: title tag
 function quotes_features() {
     add_theme_support('title-tag');
+     register_nav_menus( array(
+        'primary' => 'Primary Menu',
+    ));
 }
 
 add_action('after_setup_theme', 'quotes_features');
