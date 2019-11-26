@@ -23,7 +23,6 @@
     $('#submit-button').on('click', function(){
         const $title = $('#quote-title').val()
         const $content = $('#quote-content').val();
-        console.log($content)
 
         const data = {
             title: $title,

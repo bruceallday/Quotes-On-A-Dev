@@ -1,22 +1,21 @@
 <?php get_header(); ?>
 <?php if( have_posts() ) :?>
 
-<div class="test">
+<div>
 
-    <section id="quotes-content">
+    <section >
+        <h1>Archives!</h1>
 
-        <?php while( have_posts() ) :
+        <!-- <?php while( have_posts() ) :
             the_post(); ?>
             <h2><?php the_title();?></h2>
             <hr>
             <?php the_content(); ?>
-        <?php endwhile;?>
+        <?php endwhile;?> -->
 
 </section>
 
 </div>
-
-<button id="quote-button">Show Me Another!</button>    
 
 <?php else : ?>
         <p>No posts found</p>

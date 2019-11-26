@@ -14,8 +14,8 @@
 </section>
 
 <form>
-    <input type="text" id="quote-title">
-    <textarea name="" id="quote-content" cols="30" rows="10"></textarea>
+    <input type="text" id="quote-title" required>
+    <textarea name="" id="quote-content" cols="30" rows="10" required></textarea>
 </form>
 
 <button id="submit-button">Submit a Quote</button>    
