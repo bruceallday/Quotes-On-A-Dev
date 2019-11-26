@@ -15,7 +15,7 @@
 
 <form>
     <input type="text" id="quote-title" required>
-    <textarea name="" id="quote-content" cols="30" rows="10" required></textarea>
+    <textarea name="" id="quote-content" cols="30" rows="5" required></textarea>
 </form>
 
 <button id="submit-button">Submit a Quote</button>    

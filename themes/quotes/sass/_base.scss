@@ -1,8 +1,28 @@
 body{
-    background: radial-gradient(#d5e7f0, #495e69);
+   
+    background: url("https://arha.jp/wp-content/uploads/2013/08/The-surface-of-white-water.jpg");
+    background-size: cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    font-family: 'Contrail One', cursive;
+   
+}
+
+h2{
+    padding: 10px;
+}
+
+@mixin tablet{
+    @media (min-width: 768px){
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media (min-width: 1240px){
+        @content;
+    }
 }

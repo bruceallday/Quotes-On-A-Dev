@@ -2,11 +2,30 @@
     width: 100%;
 }
 
-.test{
+#quotes-content {
+    letter-spacing: 2px;
+    margin-top: 30px;
+    width: 50%;
+    text-align: center;
+    color: rgb(49, 48, 48);
+    font-size: 20px;
+    text-transform: uppercase;
+    transform: rotate(-20deg) skew(40deg);
+    animation: animate 3s ease-in-out infinite;
+
+    @include tablet{
+        font-size: 38px;
+    } 
+    @include desktop{
+        font-size: 46px;
+    }
+}
+
+.quotes-box{
     display: flex;
     justify-content: center;
     align-items: center;
-    height:40vh;
+    height:20vh;
 }
 
 footer h2{
@@ -28,7 +47,6 @@ footer h2{
 .menu-item{
     font-size: 18px;
 }
-
 
 form{
     display: flex;

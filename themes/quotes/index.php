@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <?php if( have_posts() ) :?>
 
-<div class="test">
+<div class="quotes-box">
 
     <section id="quotes-content">
 

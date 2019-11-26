@@ -1,20 +1,59 @@
-#quotes-content {
-    margin-top: 50px;
-    width: 50%;
-    text-align: center;
-    color: white;
-    font-size: 24px;
-    // text-transform: uppercase;
-    transform: rotate(-10deg) skew(15deg);
-    animation: animate 3s ease-in-out infinite;
-}
-
 .blurOut{
     animation: blurOut 3s ease-in-out;
 }
 
 .blurOut{
     animation: blurIn 3s ease-in-out;
+}
+
+#quote-title{
+    font-size: 34px;
+    width: 500px;
+    height: 100px;
+    margin: 10px;
+    font-family: 'Contrail One', cursive;
+    border-radius: 10px;
+     @include desktop{
+        width: 300px;
+        height: 50px;
+    }
+}
+
+#quote-content{
+    font-size: 34px;
+    width: 500px;
+    height: 300px;
+    margin: 10px;
+    font-family: 'Contrail One', cursive;
+    border-radius: 10px;
+     @include desktop{
+        width: 300px;
+        height: 100px;
+    }
+}
+
+a{
+    padding: 10px;
+    text-decoration: none;
+}
+
+button{
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    font-family: 'Contrail One', cursive;
+    border-radius: 10px;
+    margin-top: 80px;
+    @include tablet{
+        width: 300px;
+        height: 50px;
+        font-size: 26px;
+    }
+
+    @include desktop{
+        font-size: 28px;
+    }
+
 }
 
 @keyframes blurOut
@@ -42,16 +81,16 @@
 @keyframes animate
 {
     0%{
-        transform: rotate(-10deg) skew(15deg) translate(0px, 0px);
+        transform: rotate(-20deg) skew(40deg) translate(0px, 0px);
         text-shadow: -5px 5px 0 rgba(0, 0, 0, .2)
     }
     50%{
-        transform: rotate(-10deg) skew(15deg) translate(13px, -13px);
+        transform: rotate(-20deg) skew(40deg) translate(13px, -13px);
         text-shadow: -10px 10px 0 rgba(0, 0, 0, .2);
         // filter: blur(10px);
     }
     100%{
-        transform: rotate(-10deg) skew(15deg) translate(0px, 0px);
+        transform: rotate(-20deg) skew(40deg) translate(0px, 0px);
          text-shadow: -5px 5px 0 rgba(0, 0, 0, .2)
     }
 

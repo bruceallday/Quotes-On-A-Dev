@@ -59,7 +59,8 @@ body {
   font-size: 2em; }
 
 body {
-  background: radial-gradient(#d5e7f0, #495e69);
+  background: url("https://arha.jp/wp-content/uploads/2013/08/The-surface-of-white-water.jpg");
+  background-size: cover;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -68,17 +69,40 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  font-family: 'Contrail One', cursive; }
+
+h2 {
+  padding: 10px; }
 
 .main-logo {
   width: 100%; }
 
-.test {
+#quotes-content {
+  letter-spacing: 2px;
+  margin-top: 30px;
+  width: 50%;
+  text-align: center;
+  color: #313030;
+  font-size: 20px;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-20deg) skew(40deg);
+          transform: rotate(-20deg) skew(40deg);
+  -webkit-animation: animate 3s ease-in-out infinite;
+          animation: animate 3s ease-in-out infinite; }
+  @media (min-width: 768px) {
+    #quotes-content {
+      font-size: 38px; } }
+  @media (min-width: 1240px) {
+    #quotes-content {
+      font-size: 46px; } }
+
+.quotes-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,7 +112,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 40vh; }
+  height: 20vh; }
 
 footer h2 {
   display: -webkit-box;
@@ -126,17 +150,6 @@ form {
       -ms-flex-direction: column;
           flex-direction: column; }
 
-#quotes-content {
-  margin-top: 50px;
-  width: 50%;
-  text-align: center;
-  color: white;
-  font-size: 24px;
-  -webkit-transform: rotate(-10deg) skew(15deg);
-          transform: rotate(-10deg) skew(15deg);
-  -webkit-animation: animate 3s ease-in-out infinite;
-          animation: animate 3s ease-in-out infinite; }
-
 .blurOut {
   -webkit-animation: blurOut 3s ease-in-out;
           animation: blurOut 3s ease-in-out; }
@@ -144,6 +157,50 @@ form {
 .blurOut {
   -webkit-animation: blurIn 3s ease-in-out;
           animation: blurIn 3s ease-in-out; }
+
+#quote-title {
+  font-size: 34px;
+  width: 500px;
+  height: 100px;
+  margin: 10px;
+  font-family: 'Contrail One', cursive;
+  border-radius: 10px; }
+  @media (min-width: 1240px) {
+    #quote-title {
+      width: 300px;
+      height: 50px; } }
+
+#quote-content {
+  font-size: 34px;
+  width: 500px;
+  height: 300px;
+  margin: 10px;
+  font-family: 'Contrail One', cursive;
+  border-radius: 10px; }
+  @media (min-width: 1240px) {
+    #quote-content {
+      width: 300px;
+      height: 100px; } }
+
+a {
+  padding: 10px;
+  text-decoration: none; }
+
+button {
+  width: 200px;
+  height: 40px;
+  background-color: white;
+  font-family: 'Contrail One', cursive;
+  border-radius: 10px;
+  margin-top: 80px; }
+  @media (min-width: 768px) {
+    button {
+      width: 300px;
+      height: 50px;
+      font-size: 26px; } }
+  @media (min-width: 1240px) {
+    button {
+      font-size: 28px; } }
 
 @-webkit-keyframes blurOut {
   0% {
@@ -179,28 +236,28 @@ form {
 
 @-webkit-keyframes animate {
   0% {
-    -webkit-transform: rotate(-10deg) skew(15deg) translate(0px, 0px);
-            transform: rotate(-10deg) skew(15deg) translate(0px, 0px);
+    -webkit-transform: rotate(-20deg) skew(40deg) translate(0px, 0px);
+            transform: rotate(-20deg) skew(40deg) translate(0px, 0px);
     text-shadow: -5px 5px 0 rgba(0, 0, 0, 0.2); }
   50% {
-    -webkit-transform: rotate(-10deg) skew(15deg) translate(13px, -13px);
-            transform: rotate(-10deg) skew(15deg) translate(13px, -13px);
+    -webkit-transform: rotate(-20deg) skew(40deg) translate(13px, -13px);
+            transform: rotate(-20deg) skew(40deg) translate(13px, -13px);
     text-shadow: -10px 10px 0 rgba(0, 0, 0, 0.2); }
   100% {
-    -webkit-transform: rotate(-10deg) skew(15deg) translate(0px, 0px);
-            transform: rotate(-10deg) skew(15deg) translate(0px, 0px);
+    -webkit-transform: rotate(-20deg) skew(40deg) translate(0px, 0px);
+            transform: rotate(-20deg) skew(40deg) translate(0px, 0px);
     text-shadow: -5px 5px 0 rgba(0, 0, 0, 0.2); } }
 
 @keyframes animate {
   0% {
-    -webkit-transform: rotate(-10deg) skew(15deg) translate(0px, 0px);
-            transform: rotate(-10deg) skew(15deg) translate(0px, 0px);
+    -webkit-transform: rotate(-20deg) skew(40deg) translate(0px, 0px);
+            transform: rotate(-20deg) skew(40deg) translate(0px, 0px);
     text-shadow: -5px 5px 0 rgba(0, 0, 0, 0.2); }
   50% {
-    -webkit-transform: rotate(-10deg) skew(15deg) translate(13px, -13px);
-            transform: rotate(-10deg) skew(15deg) translate(13px, -13px);
+    -webkit-transform: rotate(-20deg) skew(40deg) translate(13px, -13px);
+            transform: rotate(-20deg) skew(40deg) translate(13px, -13px);
     text-shadow: -10px 10px 0 rgba(0, 0, 0, 0.2); }
   100% {
-    -webkit-transform: rotate(-10deg) skew(15deg) translate(0px, 0px);
-            transform: rotate(-10deg) skew(15deg) translate(0px, 0px);
+    -webkit-transform: rotate(-20deg) skew(40deg) translate(0px, 0px);
+            transform: rotate(-20deg) skew(40deg) translate(0px, 0px);
     text-shadow: -5px 5px 0 rgba(0, 0, 0, 0.2); } }
