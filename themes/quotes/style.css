@@ -59,7 +59,77 @@ body {
   font-size: 2em; }
 
 body {
-  background-color: blue; }
+  background-color: grey;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .main-logo {
   width: 100%; }
+
+#quotes-content {
+  width: 70vw;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-10deg) skew(15deg);
+          transform: rotate(-10deg) skew(15deg);
+  -webkit-animation: animate 3s ease-in-out infinite;
+          animation: animate 3s ease-in-out infinite; }
+
+.blurOut {
+  -webkit-animation: blur 1.5s ease-in-out;
+          animation: blur 1.5s ease-in-out; }
+
+@-webkit-keyframes blur {
+  0% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px); }
+  50% {
+    -webkit-filter: blur(10px);
+            filter: blur(10px); } }
+
+@keyframes blur {
+  0% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px); }
+  50% {
+    -webkit-filter: blur(10px);
+            filter: blur(10px); } }
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: rotate(-10deg) skew(15deg) translate(0px, 0px);
+            transform: rotate(-10deg) skew(15deg) translate(0px, 0px);
+    text-shadow: -5px 5px 0 rgba(0, 0, 0, 0.2); }
+  50% {
+    -webkit-transform: rotate(-10deg) skew(15deg) translate(10px, -10px);
+            transform: rotate(-10deg) skew(15deg) translate(10px, -10px);
+    text-shadow: -10px 10px 0 rgba(0, 0, 0, 0.2); }
+  100% {
+    -webkit-transform: rotate(-10deg) skew(15deg) translate(0px, 0px);
+            transform: rotate(-10deg) skew(15deg) translate(0px, 0px);
+    text-shadow: -5px 5px 0 rgba(0, 0, 0, 0.2); } }
+
+@keyframes animate {
+  0% {
+    -webkit-transform: rotate(-10deg) skew(15deg) translate(0px, 0px);
+            transform: rotate(-10deg) skew(15deg) translate(0px, 0px);
+    text-shadow: -5px 5px 0 rgba(0, 0, 0, 0.2); }
+  50% {
+    -webkit-transform: rotate(-10deg) skew(15deg) translate(10px, -10px);
+            transform: rotate(-10deg) skew(15deg) translate(10px, -10px);
+    text-shadow: -10px 10px 0 rgba(0, 0, 0, 0.2); }
+  100% {
+    -webkit-transform: rotate(-10deg) skew(15deg) translate(0px, 0px);
+            transform: rotate(-10deg) skew(15deg) translate(0px, 0px);
+    text-shadow: -5px 5px 0 rgba(0, 0, 0, 0.2); } }

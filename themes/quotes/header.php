@@ -8,8 +8,8 @@
 </head>
 <body <?php body_class();?>>
 
-<a href="<?php echo get_home_url();?>"><img class="main-logo" src="<?php echo get_stylesheet_directory_uri();
-                                         ?>/images/qod-logo.svg;?>" alt="Quotes on a dev logo" alt=""></a>
+<a href="<?php echo get_home_url();?>">
+    <img class="main-logo" src="<?php echo get_stylesheet_directory_uri();?>/images/qod-logo.svg;?>" alt="Quotes on a dev logo"></a>
 
 <!-- <h1><?php bloginfo('name');?></h1> -->
 
