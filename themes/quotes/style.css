@@ -59,7 +59,7 @@ body {
   font-size: 2em; }
 
 body {
-  background-color: grey;
+  background: radial-gradient(#d5e7f0, #495e69);
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,33 +78,95 @@ body {
 .main-logo {
   width: 100%; }
 
+.test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40vh; }
+
+footer h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px; }
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.menu-quotes-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.menu-item {
+  font-size: 18px; }
+
 #quotes-content {
-  width: 70vw;
-  text-transform: uppercase;
+  margin-top: 50px;
+  width: 50%;
+  text-align: center;
+  color: white;
+  font-size: 24px;
   -webkit-transform: rotate(-10deg) skew(15deg);
           transform: rotate(-10deg) skew(15deg);
   -webkit-animation: animate 3s ease-in-out infinite;
           animation: animate 3s ease-in-out infinite; }
 
 .blurOut {
-  -webkit-animation: blur 1.5s ease-in-out;
-          animation: blur 1.5s ease-in-out; }
+  -webkit-animation: blurOut 3s ease-in-out;
+          animation: blurOut 3s ease-in-out; }
 
-@-webkit-keyframes blur {
-  0% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px); }
-  50% {
-    -webkit-filter: blur(10px);
-            filter: blur(10px); } }
+.blurOut {
+  -webkit-animation: blurIn 3s ease-in-out;
+          animation: blurIn 3s ease-in-out; }
 
-@keyframes blur {
+@-webkit-keyframes blurOut {
   0% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px); }
+    -webkit-filter: blurOut(0px);
+            filter: blurOut(0px); }
   50% {
-    -webkit-filter: blur(10px);
-            filter: blur(10px); } }
+    -webkit-filter: blurOut(10px);
+            filter: blurOut(10px); } }
+
+@keyframes blurOut {
+  0% {
+    -webkit-filter: blurOut(0px);
+            filter: blurOut(0px); }
+  50% {
+    -webkit-filter: blurOut(10px);
+            filter: blurOut(10px); } }
+
+@-webkit-keyframes blurIn {
+  0% {
+    -webkit-filter: blurOut(10px);
+            filter: blurOut(10px); }
+  50% {
+    -webkit-filter: blurOut(0px);
+            filter: blurOut(0px); } }
+
+@keyframes blurIn {
+  0% {
+    -webkit-filter: blurOut(10px);
+            filter: blurOut(10px); }
+  50% {
+    -webkit-filter: blurOut(0px);
+            filter: blurOut(0px); } }
 
 @-webkit-keyframes animate {
   0% {
@@ -112,8 +174,8 @@ body {
             transform: rotate(-10deg) skew(15deg) translate(0px, 0px);
     text-shadow: -5px 5px 0 rgba(0, 0, 0, 0.2); }
   50% {
-    -webkit-transform: rotate(-10deg) skew(15deg) translate(10px, -10px);
-            transform: rotate(-10deg) skew(15deg) translate(10px, -10px);
+    -webkit-transform: rotate(-10deg) skew(15deg) translate(13px, -13px);
+            transform: rotate(-10deg) skew(15deg) translate(13px, -13px);
     text-shadow: -10px 10px 0 rgba(0, 0, 0, 0.2); }
   100% {
     -webkit-transform: rotate(-10deg) skew(15deg) translate(0px, 0px);
@@ -126,8 +188,8 @@ body {
             transform: rotate(-10deg) skew(15deg) translate(0px, 0px);
     text-shadow: -5px 5px 0 rgba(0, 0, 0, 0.2); }
   50% {
-    -webkit-transform: rotate(-10deg) skew(15deg) translate(10px, -10px);
-            transform: rotate(-10deg) skew(15deg) translate(10px, -10px);
+    -webkit-transform: rotate(-10deg) skew(15deg) translate(13px, -13px);
+            transform: rotate(-10deg) skew(15deg) translate(13px, -13px);
     text-shadow: -10px 10px 0 rgba(0, 0, 0, 0.2); }
   100% {
     -webkit-transform: rotate(-10deg) skew(15deg) translate(0px, 0px);
