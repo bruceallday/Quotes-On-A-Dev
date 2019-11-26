@@ -11,7 +11,7 @@
 
         }).done(function(data){
             console.log(data)
-            let ranNum = randomGen(data)
+            let ranNum = Math.floor(Math.random() * data.length);
             const title = data[ranNum].title.rendered
             const content = data[ranNum].content.rendered
 
@@ -20,10 +20,25 @@
         })
     })
 
-    function randomGen(data){
-        let ranNum = Math.floor(Math.random() * data.length)
-        return ranNum;
-    }
+    $('#submit-button').on('click', function(){
+        const $title = $('#quote-title').val()
+        const $content = $('#quote-content').val();
+        console.log($content)
+
+        const data = {
+            title: $title,
+            content: $content
+        }
+
+        $.ajax({
+          method: 'POST',
+          url: wpApiSettings.root + 'wp/v2/posts',
+          data, 
+          beforeSend: function(xhr){
+              xhr.setRequestHeader('X-WP-Nonce', wpApiSettings.nonce);
+          }
+        });
+    })
 
 }(jQuery))
 
