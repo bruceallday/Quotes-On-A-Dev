@@ -5,7 +5,7 @@
 
     <?php while( have_posts() ) :
         the_post(); ?>
-        <?php the_content(); ?>
+    <?php the_content(); ?>
 
     <h2><?php the_title();?></h2>
 
@@ -14,10 +14,8 @@
     <form>
         <input type="text" id="quote-title" required>
         <textarea name="" id="quote-content" cols="30" rows="5" required></textarea>
-
         <input type="text" id="quote-reference" required>
         <input type="text" id="quote-url" required>
-
     </form>
 
 <button id="submit-button">Submit a Quote</button>    
