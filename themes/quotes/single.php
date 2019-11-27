@@ -7,6 +7,10 @@
     
     <h2><?php the_title(); ?></h2>
     <?php the_content(); ?>
+
+
+    <?php echo get_field("quote_source");?>
+    <?php echo get_field("quote_url");?>
     
     <!-- Loop ends -->
     <?php endwhile;?>

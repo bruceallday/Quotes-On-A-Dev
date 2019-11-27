@@ -11,14 +11,20 @@
 
     <?php endwhile;?>
 
-</section>
+    <form>
+        <input type="text" id="quote-title" required>
+        <textarea name="" id="quote-content" cols="30" rows="5" required></textarea>
 
-<form>
-    <input type="text" id="quote-title" required>
-    <textarea name="" id="quote-content" cols="30" rows="5" required></textarea>
-</form>
+        <input type="text" id="quote-reference" required>
+        <input type="text" id="quote-url" required>
+
+    </form>
 
 <button id="submit-button">Submit a Quote</button>    
+
+
+</section>
+
 
 <?php else : ?>
         <p>No posts found</p>

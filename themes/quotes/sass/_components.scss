@@ -9,7 +9,7 @@
 #quote-title{
     font-size: 34px;
     width: 500px;
-    height: 100px;
+    height: 50px;
     margin: 10px;
     font-family: 'Contrail One', cursive;
     border-radius: 10px;
@@ -38,6 +38,7 @@ a{
 }
 
 button{
+    outline: none;
     width: 200px;
     height: 40px;
     background-color: white;

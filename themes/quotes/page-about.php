@@ -11,14 +11,6 @@
 
         <p>This site is heavily inspired by Chris Coyiers Quotes on Design</p>
         
-
-        <!-- <?php while( have_posts() ) :
-            the_post(); ?>
-            <h2><?php the_title();?></h2>
-            <hr>
-            <?php the_content(); ?>
-        <?php endwhile;?> -->
-
 </section>
 
 </div>
