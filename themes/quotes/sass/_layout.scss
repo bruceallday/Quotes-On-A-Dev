@@ -14,10 +14,10 @@
     animation: animate 3s ease-in-out infinite;
 
     @include tablet{
-        font-size: 38px;
+        font-size: 32px;
     } 
     @include desktop{
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
