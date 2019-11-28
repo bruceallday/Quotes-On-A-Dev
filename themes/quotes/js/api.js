@@ -12,10 +12,19 @@
           let ranNum = Math.floor(Math.random() * data.length);
           const title = data[ranNum].title;
           const content = data[ranNum].content;
+          const source = data[ranNum].quotesSource;
+          const srcURL = data[ranNum].quotesURL;
 
           $('#quotes-content').addClass('blurIn');
           $('#quotes-content')
-            .html(`<h2>${title}</h2> <hr> </br> <div>${content}</div>`)
+            .html(
+              `<h2>${title}</h2>
+                   <hr>
+                   </br> 
+                   <div>${content}</div>
+                   <br>
+                   <a class="refLink" href="${source}">${srcURL}</a>`
+            )
             .toggle('slide');
         });
     })
@@ -29,8 +38,8 @@
         const data = {
             title: $title,
             content: $content,
-            quotesSource: $quoteRef,
-            quotesURL: $quoteURL
+            _qod_quote_source: $quoteRef,
+            _qod_quote_source_url: $quoteURL
         }
 
         $.ajax({

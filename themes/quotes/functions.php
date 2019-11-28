@@ -1,22 +1,24 @@
 <?php
 
 require get_theme_file_path('/inc/api-route.php');
+require get_theme_file_path('/inc/metaboxes.php');
+require get_theme_file_path('/inc/extras.php');
 
 
-function qod_custom_rest(){
-    register_rest_field("post", "quotesSource", array(
-        "get_callback" => function(){
-            return get_field("quote_source");}
-    ));
+// function qod_custom_rest(){
+//     register_rest_field("post", "quotesSource", array(
+//         "get_callback" => function(){
+//             return get_field("quote_source");}
+//     ));
 
 
-    register_rest_field("post", "quotesURL", array(
-        "get_callback" => function(){
-            return get_field("quote_url");}
-    ));
-}
+//     register_rest_field("post", "quotesURL", array(
+//         "get_callback" => function(){
+//             return get_field("quote_url");}
+//     ));
+// }
 
-add_action("rest_api_init", "qod_custom_rest");
+// add_action("rest_api_init", "qod_custom_rest");
 
 //Adds script and stylesheets
 function quotes_files() {

@@ -156,6 +156,9 @@ form {
       -ms-flex-align: center;
           align-items: center; }
 
+.refLink {
+  text-align: center; }
+
 .blurOut {
   -webkit-animation: blurOut 3s ease-in-out;
           animation: blurOut 3s ease-in-out; }
