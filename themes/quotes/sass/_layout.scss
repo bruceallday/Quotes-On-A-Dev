@@ -57,3 +57,16 @@ form{
 .refLink{
     text-align: center;
 }
+
+.archivesSection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.archivesContainer{
+    width: 30%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+}

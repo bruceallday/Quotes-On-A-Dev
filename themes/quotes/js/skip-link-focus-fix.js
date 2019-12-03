@@ -1,10 +1,3 @@
-/**
- * skip-link-focus-fix.js
- *
- * Helps with accessibility for keyboard only users.
- *
- * Learn more: https://github.com/Automattic/_s/pull/136
- */
 (function() {
   const isWebkit = navigator.userAgent.toLowerCase().indexOf('webkit') > -1,
     isOpera = navigator.userAgent.toLowerCase().indexOf('opera') > -1,

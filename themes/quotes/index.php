@@ -2,7 +2,6 @@
 <?php if( have_posts() ) :?>
 
 <div class="quotes-box">
-
     <section id="quotes-content">
 
         <?php while( have_posts() ) :
